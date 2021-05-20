@@ -1,0 +1,66 @@
+<div class="main-app battlegrounds-theme">
+	<app-toolbar class="toolbar"></app-toolbar>
+	<section class="above-the-fold" style="background-image: url('assets/images/clouds.png'), url('assets/images/background_1.png')">
+		<div class="title-section">
+			<h1 class="app-title">
+				<div class="pre-line">Enhance Your Experience</div>
+				<div class="main-line">With Firestone</div>
+			</h1>
+			<h2 class="app-subtitle">An all-in-one dream companion app for any Hearthstone player</h2>
+			<div class="download-container">
+				<div class="download-cta">
+					<!-- <div class="cta-title">Download Firestone</div> -->
+					<div class="tos-compliant">Compliant with Blizzard's ToS</div>
+					<div class="more-info">Doesn't support Mac</div>
+				</div>
+				<app-download-button class="cta-button"></app-download-button>
+			</div>
+		</div>
+		<div class="video-container">
+			<app-video-container
+				[thumbnail]="'assets/images/screenshots/main/thumbnail.png'"
+				[video]="'https://static.zerotoheroes.com/website/trailer.mp4?v=2'"
+			></app-video-container>
+		</div>
+	</section>
+	<section class="unique-features">
+		<div class="unique-features-text">Find out why Firestone is the best Hearthstone companion app for you</div>
+		<svg-icon class="down-arrow" key="video-play"></svg-icon>
+	</section>
+	<section class="features-container" style="background-image: url('assets/images/background_2.png')">
+		<div class="features-overview">
+			<app-menu-selection
+				class="menu"
+				[selectedModule]="selectedSection.module"
+				(moduleSelected)="onModuleSelected($event)"
+			></app-menu-selection>
+			<div class="container">
+				<!-- <h3 class="section-title">{{ selectedSection.title }}</h3> -->
+				<div class="section-content">
+					<div class="text-backup">
+						{{ selectedSection.title }}
+					</div>
+					<div class="section-content-video">
+						<app-video-container [thumbnail]="selectedSection.thumbnailPath"></app-video-container>
+					</div>
+					<ul class="features-list">
+						<li class="feature" *ngFor="let feature of selectedSection.features">
+							<div class="text">{{ feature.text }}</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="closing">
+		<h2 class="app-subtitle">Level up your Hearthstone experience</h2>
+		<div class="download-container">
+			<div class="download-cta">Download Firestone today</div>
+			<app-download-button class="cta-button"></app-download-button>
+		</div>
+	</section>
+	<section class="footer">
+		<!-- <div class="overwolf">Built on Overwolf</div> -->
+		<a href="https://discord.gg/FhEHn8w" target="_blank" class="contact">Contact the dev</a>
+	</section>
+</div>

@@ -1,0 +1,7 @@
+<div class="video-section" [ngClass]="{ 'started-playing': startedPlaying, 'is-playing': isPlaying }" (click)="handleClick()">
+	<video [src]="video" class="video-trailer" controls #videoPlayer></video>
+	<img [src]="thumbnail" alt="" class="video-thumbnail" />
+	<div class="video-overlay" *ngIf="video">
+		<svg-icon class="icon" key="video-play"></svg-icon>
+	</div>
+</div>

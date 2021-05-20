@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-grow: 1;
+	font-family: Open Sans;
+}
+
+body {
+	max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+	cursor: default;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+* {
+	scrollbar-color: #423940 #160110;
+}
+
+a {
+	color: var(--color-1);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--color-2);
+	}
+}

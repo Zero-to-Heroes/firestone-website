@@ -1,0 +1,29 @@
+:host {
+	display: flex;
+	padding: 10px 0;
+	position: relative;
+	height: 100%;
+}
+
+.toolbar {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.logo {
+	color: var(--default-title-color);
+	height: 44px;
+	width: 200px;
+	position: relative;
+	top: -2px;
+}
+
+.download-button {
+	margin-left: auto;
+	// Hackjy, because the div doesn't resize properly when reducing the image's height
+	// (it keeps the 500px width of the source image)
+	width: 150px;
+	height: 100%;
+}

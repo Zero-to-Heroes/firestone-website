@@ -1,0 +1,45 @@
+<ul class="menu-selection main-menu">
+	<li [ngClass]="{ 'selected': selectedModule === 'decktracker' && !mouseOver }" (mousedown)="selectModule('decktracker')">
+		<svg-icon class="icon" key="decktracker"></svg-icon>
+		<div class="text">
+			<div class="text-background"></div>
+			<div class="menu-header">Decktracker</div>
+		</div>
+	</li>
+	<li [ngClass]="{ 'selected': selectedModule === 'battlegrounds' && !mouseOver }" (mousedown)="selectModule('battlegrounds')">
+		<svg-icon class="icon" key="battlegrounds"></svg-icon>
+		<div class="text">
+			<div class="text-background"></div>
+			<div class="menu-header">Battlegrounds</div>
+		</div>
+	</li>
+	<li [ngClass]="{ 'selected': selectedModule === 'duels' && !mouseOver }" (mousedown)="selectModule('duels')">
+		<svg-icon class="icon" key="duels"></svg-icon>
+		<div class="text">
+			<div class="text-background"></div>
+			<div class="menu-header">Duels</div>
+		</div>
+	</li>
+	<li class="main-menu-separator"></li>
+	<li [ngClass]="{ 'selected': selectedModule === 'replays' && !mouseOver }" (mousedown)="selectModule('replays')">
+		<svg-icon class="icon" key="replays"></svg-icon>
+		<div class="text">
+			<div class="text-background"></div>
+			<div class="menu-header">Replays</div>
+		</div>
+	</li>
+	<li [ngClass]="{ 'selected': selectedModule === 'achievements' && !mouseOver }" (mousedown)="selectModule('achievements')">
+		<svg-icon class="icon" key="achievements"></svg-icon>
+		<div class="text">
+			<div class="text-background"></div>
+			<div class="menu-header">Achievements</div>
+		</div>
+	</li>
+	<li [ngClass]="{ 'selected': selectedModule === 'collection' && !mouseOver }" (mousedown)="selectModule('collection')">
+		<svg-icon class="icon" key="collection"></svg-icon>
+		<div class="text">
+			<div class="text-background"></div>
+			<div class="menu-header">Collection</div>
+		</div>
+	</li>
+</ul>

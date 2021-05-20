@@ -1,0 +1,16 @@
+:host {
+	display: flex;
+}
+
+.download-link {
+	display: flex;
+	opacity: 0.9;
+
+	.download-image {
+		cursor: pointer;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
