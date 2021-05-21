@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+declare let amplitude;
 
 @Component({
 	selector: 'app-download-button',
@@ -6,4 +8,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 	styleUrls: ['./download-button.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DownloadButtonComponent {}
+export class DownloadButtonComponent {
+	@Input() id: string;
+
+	clickDownload(): void {
+		amplitude.logEvent('download-click', {
+			'button-id': this.id,
+		});
+	}
+}

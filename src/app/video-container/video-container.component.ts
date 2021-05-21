@@ -1,5 +1,7 @@
 import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
 
+declare let amplitude;
+
 @Component({
 	selector: 'app-video-container',
 	templateUrl: './video-container.component.html',
@@ -16,6 +18,11 @@ export class VideoContainerComponent {
 	isPlaying: boolean;
 
 	handleClick(): void {
+		if (!this.startedPlaying) {
+			amplitude.logEvent('video-play', {
+				'video-name': this.video,
+			});
+		}
 		this.startedPlaying = true;
 		if (!this.isPlaying) {
 			this.isPlaying = true;

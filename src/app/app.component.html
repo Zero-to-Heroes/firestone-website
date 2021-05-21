@@ -8,12 +8,12 @@
 			</h1>
 			<h2 class="app-subtitle">An all-in-one dream companion app for any Hearthstone player</h2>
 			<div class="download-container">
+				<app-download-button class="cta-button" [id]="'top-button'"></app-download-button>
 				<div class="download-cta">
 					<!-- <div class="cta-title">Download Firestone</div> -->
 					<div class="tos-compliant">Compliant with Blizzard's ToS</div>
-					<div class="more-info">Doesn't support Mac</div>
+					<div class="more-info">Only for Windows</div>
 				</div>
-				<app-download-button class="cta-button"></app-download-button>
 			</div>
 		</div>
 		<div class="video-container">
@@ -55,8 +55,8 @@
 	<section class="closing">
 		<h2 class="app-subtitle">Level up your Hearthstone experience</h2>
 		<div class="download-container">
-			<div class="download-cta">Download Firestone today</div>
-			<app-download-button class="cta-button"></app-download-button>
+			<!-- <div class="download-cta">Download Firestone today</div> -->
+			<app-download-button class="cta-button" [id]="'bottom-button'"></app-download-button>
 		</div>
 	</section>
 	<section class="footer">

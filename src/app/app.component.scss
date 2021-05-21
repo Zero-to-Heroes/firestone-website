@@ -46,6 +46,7 @@
 		.app-title {
 			text-align: center;
 			font-size: 40px;
+			font-family: 'Poppins', sans-serif;
 
 			.pre-line {
 				color: var(--default-title-color);
@@ -69,10 +70,10 @@
 				display: flex;
 				flex-direction: column;
 				font-size: 12px;
+				margin-left: 20px;
 			}
 
 			.cta-button {
-				margin-left: 20px;
 				height: 50px;
 				width: 180px;
 			}
@@ -205,22 +206,23 @@
 				flex-grow: 1;
 				display: flex;
 				align-items: center;
+				// font-family: Klavika;
 
 				.text {
 					max-width: 90%;
 				}
 
-				&:nth-child(even) {
-					.text {
-						margin-left: auto;
-					}
-				}
+				// &:nth-child(even) {
+				// 	.text {
+				// 		margin-left: auto;
+				// 	}
+				// }
 
-				&:nth-child(odd) {
-					.text {
-						margin-right: auto;
-					}
-				}
+				// &:nth-child(odd) {
+				// 	.text {
+				// 		margin-right: auto;
+				// 	}
+				// }
 			}
 		}
 	}
