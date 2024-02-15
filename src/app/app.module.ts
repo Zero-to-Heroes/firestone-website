@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SvgIconsModule } from '@ngneat/svg-icon';
+import { SvgIconComponent, provideSvgIcons } from '@ngneat/svg-icon';
 import { AppComponent } from './app.component';
 import { DownloadButtonComponent } from './download-button/download-button.component';
 import { MenuSelectionComponent } from './menu-selection/menu-selection.component';
@@ -18,23 +18,20 @@ import { VideoContainerComponent } from './video-container/video-container.compo
 
 @NgModule({
 	declarations: [AppComponent, DownloadButtonComponent, ToolbarComponent, MenuSelectionComponent, VideoContainerComponent],
-	imports: [
-		BrowserModule,
-		SvgIconsModule.forRoot({
-			icons: [
-				appFirestoneLogoIcon,
-				appDecktrackerIcon,
-				appBattlegroundsIcon,
-				appAchievementsIcon,
-				appCollectionIcon,
-				appDuelsIcon,
-				appGeneralIcon,
-				appReplaysIcon,
-				appVideoPlayIcon,
-			],
-		}),
+	imports: [BrowserModule, SvgIconComponent],
+	providers: [
+		provideSvgIcons([
+			appFirestoneLogoIcon,
+			appDecktrackerIcon,
+			appBattlegroundsIcon,
+			appAchievementsIcon,
+			appCollectionIcon,
+			appDuelsIcon,
+			appGeneralIcon,
+			appReplaysIcon,
+			appVideoPlayIcon,
+		]),
 	],
-	providers: [],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

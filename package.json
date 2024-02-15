@@ -20,7 +20,7 @@
     "@angular/platform-browser": "^17.2.1",
     "@angular/platform-browser-dynamic": "^17.2.1",
     "@angular/router": "^17.2.1",
-    "@ngneat/svg-icon": "^3.1.1",
+    "@ngneat/svg-icon": "^7.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "^0.14.4"
@@ -34,7 +34,7 @@
     "@angular-eslint/template-parser": "^17.2.1",
     "@angular/cli": "^17.2.0",
     "@angular/compiler-cli": "^17.2.1",
-    "@ngneat/svg-generator": "^2.0.0",
+    "@ngneat/svg-generator": "^7.0.3",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.16.1",
