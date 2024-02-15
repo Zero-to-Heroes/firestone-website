@@ -119,6 +119,5 @@
 				"changeDetection": "OnPush"
 			}
 		}
-	},
-	"defaultProject": "firestone-website"
+  }
 }
