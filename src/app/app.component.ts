@@ -1,8 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core';
 import { infoSections } from './data/info-sections';
 
-declare let amplitude;
-
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -17,14 +15,9 @@ export class AppComponent implements AfterViewInit {
 
 	onModuleSelected(module: string): void {
 		this.selectedSection = this.infoSections.find((section) => section.module === module);
-		amplitude.logEvent('browse-module', {
-			'module-name': module,
-		});
 	}
 
-	ngAfterViewInit(): void {
-		amplitude.logEvent('visit');
-	}
+	ngAfterViewInit(): void {}
 }
 
 export interface InfoSection {
