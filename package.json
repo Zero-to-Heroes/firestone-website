@@ -1,69 +1,69 @@
 {
-	"name": "firestone-website",
-	"version": "0.0.0",
-	"scripts": {
-		"ng": "ng",
-		"start": "ng serve",
-		"build": "ng build",
-		"test": "ng test",
-		"lint": "ng lint",
-		"e2e": "ng e2e",
-		"generate-icons": "svg-generator"
-	},
-	"private": true,
-	"dependencies": {
-		"@angular/animations": "^16.2.12",
-		"@angular/common": "^16.2.12",
-		"@angular/compiler": "^16.2.12",
-		"@angular/core": "^16.2.12",
-		"@angular/forms": "^16.2.12",
-		"@angular/platform-browser": "^16.2.12",
-		"@angular/platform-browser-dynamic": "^16.2.12",
-		"@angular/router": "^16.2.12",
-		"@ngneat/svg-icon": "^3.1.1",
-		"rxjs": "~6.6.0",
-		"tslib": "^2.0.0",
-		"zone.js": "^0.14.4"
-	},
-	"devDependencies": {
-		"@angular-devkit/build-angular": "^17.2.0",
-		"@angular-eslint/builder": "^17.2.1",
-		"@angular-eslint/eslint-plugin": "^17.2.1",
-		"@angular-eslint/eslint-plugin-template": "^17.2.1",
-		"@angular-eslint/schematics": "^17.2.1",
-		"@angular-eslint/template-parser": "^17.2.1",
-		"@angular/cli": "^16.2.12",
-		"@angular/compiler-cli": "^16.2.12",
-		"@ngneat/svg-generator": "^2.0.0",
-		"@types/jasmine": "~3.6.0",
-		"@types/node": "^12.11.1",
-		"@typescript-eslint/eslint-plugin": "4.16.1",
-		"@typescript-eslint/parser": "4.16.1",
-		"codelyzer": "^6.0.0",
-		"eslint": "^7.6.0",
-		"jasmine-core": "~3.6.0",
-		"jasmine-spec-reporter": "~5.0.0",
-		"karma": "~6.4.2",
-		"karma-chrome-launcher": "~3.1.0",
-		"karma-coverage": "~2.0.3",
-		"karma-jasmine": "~4.0.0",
-		"karma-jasmine-html-reporter": "^1.5.0",
-		"protractor": "~7.0.0",
-		"ts-node": "~8.3.0",
-		"tslint": "~6.1.0",
-		"typescript": "^5.3.3"
-	},
-	"svgGenerator": {
-		"outputPath": "./src/app/svg",
-		"prefix": "app",
-		"srcPath": "./src/assets/svg",
-		"svgoConfig": {
-			"plugins": [
-				{
-					"removeDimensions": true,
-					"cleanupAttrs": true
-				}
-			]
-		}
-	}
+  "name": "firestone-website",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "generate-icons": "svg-generator"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.2.1",
+    "@angular/common": "^17.2.1",
+    "@angular/compiler": "^17.2.1",
+    "@angular/core": "^17.2.1",
+    "@angular/forms": "^17.2.1",
+    "@angular/platform-browser": "^17.2.1",
+    "@angular/platform-browser-dynamic": "^17.2.1",
+    "@angular/router": "^17.2.1",
+    "@ngneat/svg-icon": "^3.1.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "zone.js": "^0.14.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.2.0",
+    "@angular-eslint/builder": "^17.2.1",
+    "@angular-eslint/eslint-plugin": "^17.2.1",
+    "@angular-eslint/eslint-plugin-template": "^17.2.1",
+    "@angular-eslint/schematics": "^17.2.1",
+    "@angular-eslint/template-parser": "^17.2.1",
+    "@angular/cli": "^17.2.0",
+    "@angular/compiler-cli": "^17.2.1",
+    "@ngneat/svg-generator": "^2.0.0",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "@typescript-eslint/parser": "4.16.1",
+    "codelyzer": "^6.0.0",
+    "eslint": "^7.6.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.4.2",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "^5.3.3"
+  },
+  "svgGenerator": {
+    "outputPath": "./src/app/svg",
+    "prefix": "app",
+    "srcPath": "./src/assets/svg",
+    "svgoConfig": {
+      "plugins": [
+        {
+          "removeDimensions": true,
+          "cleanupAttrs": true
+        }
+      ]
+    }
+  }
 }

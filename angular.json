@@ -64,19 +64,19 @@
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
-					"options": {
-						"browserTarget": "firestone-website:build"
+          "options": {
+            "buildTarget": "firestone-website:build"
 					},
 					"configurations": {
-						"production": {
-							"browserTarget": "firestone-website:build:production"
+            "production": {
+              "buildTarget": "firestone-website:build:production"
 						}
 					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "firestone-website:build"
+          "options": {
+            "buildTarget": "firestone-website:build"
 					}
 				},
 				"test": {
